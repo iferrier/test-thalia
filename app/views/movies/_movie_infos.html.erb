@@ -7,6 +7,7 @@
       <i class="fa-solid fa-pen fa-xs ml-2"></i>
     </button>
   </div>
+  <p>Hello</p>
 
   <%= simple_form_for movie, html: {
       class: "d-none",
@@ -14,7 +15,7 @@
     } do |f| %>
     <%= f.input :title %>
     <%= f.input :year %>
-    <%= f.input :rating, collection: 1..5, label: false, prompt_html: {class: 'fa-solid fa-person'} %>
+    <%= f.input :rating, collection: 1..5, label: false, prompt_html: {class: 'fa-solid fa-person-'} %>
     <%= f.submit "Update movie", class: "btn btn-sm btn-primary btn-block mt-2" %>
   <% end %>
 </div>
